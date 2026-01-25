@@ -30,3 +30,18 @@ header {
   border: 1px solid #eee;
   padding: 12px 0;
 }
+
+.hero {
+  padding-top: 66px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+}
