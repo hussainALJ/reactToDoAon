@@ -5,6 +5,10 @@ function List() {
   const [item, setItem] = useState("");
   const [itemsArr, setItemsArr] = useState([]);
 
+  const deleteItem = (i) => {
+    setItemsArr(itemsArr.filter((item, index) => index !== i))
+  }
+
   return (
     <>
       <section className="todoList">
@@ -25,10 +29,11 @@ function List() {
                 + Add New
               </button>
           </div>
+          <div className="items">
           {itemsArr.map((item, index) =>
-            <Todo key={index} text={item}/>
+            <Todo key={index} text={item} onDelete={() => deleteItem(index)}/>
             )}
-
+          </div>
           <p className="counter">Total list: <span>{itemsArr.length}</span></p>
         </div>
       </section>
@@ -36,4 +41,4 @@ function List() {
   );
 }
 
-export default List;
+export default List

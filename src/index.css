@@ -13,6 +13,11 @@ a {
   margin-left: 27px;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .container {
   max-width: 592px;
   padding: 0 10px;
@@ -53,7 +58,6 @@ header {
 .todoList .addNew {
   padding: 12px 22px;
   background-color: #00f;
-  border: none;
   border-radius: 8px;
   color: #fff;
   font-weight: 600;
@@ -67,4 +71,20 @@ header {
   border-radius: 8px;
   font-weight: 400;
   font-size: 20px;
+}
+
+.todoList .items {
+  padding-top: 31px;
+}
+
+.todoList .todo {
+  background-color: #f6f6f6;
+  padding: 24px 21px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.todo p {
+  font-size: 20px;
+  font-weight: 400;
 }

@@ -1,9 +1,11 @@
-function Todo ({text, index}) {
+import deleteIcon from '/deleteIcon.svg'
+
+function Todo ({text, index, onDelete}) {
     return (
         <>
-        <div key={index} className="todo">
+        <div key={index} className="todo flex">
             <p>{text}</p>
-            <button>X</button>
+            <button onClick={onDelete}><img src={deleteIcon} alt="" /></button>
         </div>
         </>
     )
