@@ -88,3 +88,16 @@ header {
   font-size: 20px;
   font-weight: 400;
 }
+
+.counter {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #666;
+}
+
+.counter span {
+  font-weight: 800;
+  font-size: 20px;
+  color: #000;
+}
