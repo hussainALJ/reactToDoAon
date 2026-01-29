@@ -1,14 +1,48 @@
-import deleteIcon from '/deleteIcon.svg'
+import deleteIcon from "/deleteIcon.svg";
 
-function Todo ({text, index, onDelete}) {
-    return (
-        <>
-        <div key={index} className="todo flex">
-            <p>{text}</p>
-            <button onClick={onDelete}><img src={deleteIcon} alt="" /></button>
-        </div>
-        </>
-    )
+function Todo({ text, index, onDelete }) {
+  return (
+    <>
+      <div key={index} className="todo flex">
+        <p>{text}</p>
+        <button onClick={onDelete}>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="31"
+              height="31"
+              rx="7.5"
+              fill="white"
+              stroke="#FF0000"
+            />
+            <line
+              x1="9.70711"
+              y1="9.00002"
+              x2="23"
+              y2="22.2929"
+              stroke="#FF0000"
+              stroke-linecap="round"
+            />
+            <line
+              x1="9"
+              y1="22.2929"
+              x2="22.2929"
+              y2="9"
+              stroke="#FF0000"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </>
+  );
 }
 
-export default Todo
+export default Todo;

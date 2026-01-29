@@ -21,6 +21,7 @@ function List() {
                 placeholder="Write Text here . . ."
               />
               <button
+              id="add"
                 className="addNew"
                 onClick={() => {
                   setItemsArr([...itemsArr, item]);
