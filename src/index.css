@@ -13,6 +13,10 @@ a {
   margin-left: 27px;
 }
 
+a.active {
+  color: #0000FF;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -53,6 +57,10 @@ header {
 
 .todoList {
   padding-top: 38px;
+}
+
+.todoList img {
+  width: 100%;
 }
 
 .todoList .addNew {

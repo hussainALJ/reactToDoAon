@@ -1,14 +1,15 @@
+import { Routes, Route} from 'react-router-dom'
 import './App.css'
-import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import List from './components/List.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <List />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/About' element={<About />} />
+    </Routes>
     </>
   )
 }

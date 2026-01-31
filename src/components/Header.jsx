@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import logo from '/logo.svg'
 
 function Header () {
@@ -8,7 +9,10 @@ function Header () {
                 <div>
                     <img src={logo} alt="logo" />
                 </div>
-                <nav><a href="" style={{ color: "#00f"}}>Home</a><a href="">About</a></nav>
+                <nav>
+                    <NavLink to='/' end>Home</NavLink>
+                    <NavLink to='/About' >About</NavLink>
+                </nav>
             </div>
         </header>
         </>
